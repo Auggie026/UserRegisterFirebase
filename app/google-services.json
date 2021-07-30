@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "863405707484",
+    "project_id": "logintest-aebeb",
+    "storage_bucket": "logintest-aebeb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863405707484:android:866f8d93a7180bf6712419",
+        "android_client_info": {
+          "package_name": "com.example.userregisterfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863405707484-rfasjn2georqokmb272d3k5kr427g6v9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpSWBMGMOJgWLL_YPkQakLi_XNdtfsAd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863405707484-rfasjn2georqokmb272d3k5kr427g6v9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
