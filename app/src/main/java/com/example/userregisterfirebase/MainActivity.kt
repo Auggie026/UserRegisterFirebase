@@ -19,9 +19,15 @@ class MainActivity : AppCompatActivity() {
 
         user = FirebaseAuth.getInstance()
 
+        checkIfUserIsLogged()
+
         binding.btnLogin.setOnClickListener {
             registerUser()
         }
+    }
+
+    private fun checkIfUserIsLogged(){
+
     }
 
     private fun registerUser(){
@@ -41,7 +47,6 @@ class MainActivity : AppCompatActivity() {
                             Toast.LENGTH_SHORT).show()
 
                         startActivity(Intent(this, SecondActivity::class.java))
-
                         finish()
 
                     }else{
@@ -50,6 +55,9 @@ class MainActivity : AppCompatActivity() {
                             .addOnCompleteListener { mTask ->
 
                                 if(mTask.isSuccessful){
+                                    startActivity(Intent(
+                                        this,
+                                        SecondActivity::class.java))
 
                                 } else {
                                     Toast.makeText(
@@ -61,7 +69,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-        }else{
+        } else{
             Toast.makeText(
                 this,
                 "Email and password cannot be empty",
