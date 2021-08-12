@@ -28,6 +28,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun checkIfUserIsLogged(){
 
+        if(user.currentUser != null){
+            startActivity(Intent(this, SecondActivity::class.java))
+            finish()
+        }
+
     }
 
     private fun registerUser(){
